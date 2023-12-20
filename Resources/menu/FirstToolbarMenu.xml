@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+  <item
+       android:id="@+id/IDMENUSETTINGS"
+       android:icon="@drawable/SettingsIcon"
+       app:showAsAction="ifRoom"
+       android:title="Edit" />
+  <item
+       android:id="@+id/IDMSEARCH"
+       android:icon="@drawable/SearchIcon"
+       android:title="Search"
+       app:showAsAction="ifRoom|collapseActionView"
+       app:actionViewClass="android.support.v7.widget.SearchView"/>
+</menu>

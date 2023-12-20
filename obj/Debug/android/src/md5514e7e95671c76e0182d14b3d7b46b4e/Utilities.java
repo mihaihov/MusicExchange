@@ -1,0 +1,38 @@
+package md5514e7e95671c76e0182d14b3d7b46b4e;
+
+
+public class Utilities
+	extends android.support.v7.app.AppCompatActivity
+	implements
+		mono.android.IGCUserPeer
+{
+/** @hide */
+	public static final String __md_methods;
+	static {
+		__md_methods = 
+			"";
+		mono.android.Runtime.register ("MusicExchance.Utilities, MusicExchance, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", Utilities.class, __md_methods);
+	}
+
+
+	public Utilities () throws java.lang.Throwable
+	{
+		super ();
+		if (getClass () == Utilities.class)
+			mono.android.TypeManager.Activate ("MusicExchance.Utilities, MusicExchance, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+	}
+
+	private java.util.ArrayList refList;
+	public void monodroidAddReference (java.lang.Object obj)
+	{
+		if (refList == null)
+			refList = new java.util.ArrayList ();
+		refList.add (obj);
+	}
+
+	public void monodroidClearReferences ()
+	{
+		if (refList != null)
+			refList.clear ();
+	}
+}

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+  <PreferenceCategory
+    android:title="General"
+    android:key="preference_general">
+    <Preference
+      android:key="preference_equlizer"
+      android:summary="Control the sound quality"
+      android:title="Equlizer">
+    </Preference>
+    <Preference
+      android:key="preference_sleeptime"
+      android:title="Time to sleep"
+      android:summary="Set the time before the music stops"/>
+    <Preference
+      android:key="preference_refresh"
+      android:title="Refresh"
+      android:summary="Refresh ME"/>
+  </PreferenceCategory>
+  <PreferenceCategory
+    android:title="Headphones control"
+    android:key="preference_headphones">
+    <CheckBoxPreference
+      android:key="preference_pausewhenunplugged"
+      android:title="Pause when unplugged"
+      android:summary="Pause the music when headphones are unplugged"
+       android:defaultValue="true"/>
+    <CheckBoxPreference
+      android:key="preference_playwhenplugged"
+      android:title="Play when plugged in"
+      android:summary="Play the music when headphones are plugged in"
+       android:defaultValue="false"/>
+    <CheckBoxPreference
+      android:key="preference_headphonescontroll"
+      android:title="Headphones controll"
+      android:summary="Enable or disable control through the headphones"
+      android:defaultValue="true"/>
+  </PreferenceCategory>
+</PreferenceScreen>

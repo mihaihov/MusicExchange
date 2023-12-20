@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/IDEQTOOLBAR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#192b3d"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <LinearLayout
+        android:id="@+id/IDLLEQFREQBARS"
+        android:layout_height="0dp"
+        android:layout_weight="1.8"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:background="@drawable/roundcornerslayout" />
+    <FrameLayout
+        android:id="@+id/IDFLEQSIMPLEVIEW"
+        android:layout_height="0dp"
+        android:layout_weight="1.8"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/roundcornerslayout">
+        <refractored.controls.CircleImageView
+            android:id="@+id/IDMAINCIVLEFT"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="left"
+            android:src="@drawable/ME_RotatoryKnobMainImage" />
+        <refractored.controls.CircleImageView
+            android:id="@+id/IDMAINCIVLEFTVOLUMEINDICATOR"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="16dp"
+            android:tint="#88bcef"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/ME_RotatoryKnobVolumeIndicator" />
+        <TextView
+            android:id="@+id/IDTVCIVLEFTMIN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="120dp"
+            android:text="BASS"
+            android:textSize="10dp"
+            android:textColor="#000000" />
+        <refractored.controls.CircleImageView
+            android:id="@+id/IDMAINCIVRIGHT"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="right"
+            android:src="@drawable/ME_RotatoryKnobMainImage" />
+        <refractored.controls.CircleImageView
+            android:id="@+id/IDMAINCIVRIGHTVOLUMEINDICATOR"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="16dp"
+            android:tint="#88bcef"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/ME_RotatoryKnobVolumeIndicator" />
+        <TextView
+            android:id="@+id/IDTVCIVRIGHTMIN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="150dp"
+            android:layout_marginTop="120dp"
+            android:text="VIRTUALIZER"
+            android:textSize="10dp"
+            android:textColor="#000000" />
+    </FrameLayout>
+    <TextView
+        android:id="@+id/IDTVEQLAYOUT"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:textSize="19dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:textColor="#4295f4"
+        android:text="Item1"
+        android:background="@drawable/EQSpinnerStyle" />
+</LinearLayout>

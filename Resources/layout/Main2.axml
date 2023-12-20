@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="#000000"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/IDFIRSTTOOLBAR"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.4"
+        android:background="#192b3d"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <TextView
+            android:id="@+id/IDTVTITLEFIRSTTOOLBAR"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="left"
+            android:text="Music Exchange"
+            android:textSize="20dp"
+            android:textColor="#ffffff" />
+    </android.support.v7.widget.Toolbar>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/IDVIEWPAGER"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.2"
+        android:background="#ffffff"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <android.support.v4.view.PagerTabStrip
+            android:id="@+id/IDPAGERTABSTRIP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:background="#192b3d"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    </android.support.v4.view.ViewPager>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/IDSECONDTOOLBAR"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="match_parent"
+        android:background="@drawable/SecondToolbarStyle"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

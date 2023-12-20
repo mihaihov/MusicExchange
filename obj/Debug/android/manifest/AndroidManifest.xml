@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="MusicExchance.MusicExchance" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
+  <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="21" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <application android:label="MusicExchance" android:theme="@style/MyTheme" android:hardwareAccelerated="true" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
+    <activity android:name=".MainActivity" android:label="MusicExchance" android:theme="@style/MyTheme">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+      </intent-filter>
+      <meta-data android:name="android.app.default_searchable" android:value=".SearchResultActivity" />
+    </activity>
+    <activity android:name=".SearchResultActivity" android:label="MusicExchance" android:theme="@style/MyTheme">
+      <intent-filter>
+        <action android:name="android.intent.action.SEARCH" />
+      </intent-filter>
+      <meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />
+    </activity>
+    <activity android:name=".SettingsActivity" android:label="MusicExcanche" android:theme="@style/MyTheme" android:parentActivityName=".MainActivity"></activity>
+    <activity android:name="md5514e7e95671c76e0182d14b3d7b46b4e.EqualizerActivity" />
+    <activity android:icon="@drawable/icon" android:label="MusicExchance" android:windowSoftInputMode="stateUnspecified|adjustNothing" android:name="md5514e7e95671c76e0182d14b3d7b46b4e.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:name="md5514e7e95671c76e0182d14b3d7b46b4e.SearchResultActivity">
+      <meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />
+      <intent-filter>
+        <action android:name="android.intent.action.SEARCH" />
+      </intent-filter>
+    </activity>
+    <activity android:label="" android:parentActivityName="md5514e7e95671c76e0182d14b3d7b46b4e.MainActivity" android:name="md5514e7e95671c76e0182d14b3d7b46b4e.SettingsActivity" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="MusicExchance.MusicExchance.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.MusicExchance.MusicExchance" />
+      </intent-filter>
+    </receiver>
+  </application>
+  <meta-data android:name="android.support.VERSION" android:value="25.3.1" />
+</manifest>

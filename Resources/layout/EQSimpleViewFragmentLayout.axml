@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    <FrameLayout
+        android:id="@+id/IDEQSVFL"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/roundcornerslayout">
+        <refractored.controls.CircleImageView
+            android:id="@+id/IDMAINCIVLEFT"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="left|center_vertical"
+            android:src="@drawable/ME_RotatoryKnobMainImage" />
+        <TextView
+            android:id="@+id/IDTVCIVLEFTMIN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginTop="30dp"
+            android:text="MIN"
+            android:textSize="10dp"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/IDTVCIVLEFTMAX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="150dp"
+            android:text="MAX"
+            android:textSize="10dp"
+            android:textColor="#000000" />
+        <refractored.controls.CircleImageView
+            android:id="@+id/IDMAINCIVRIGHT"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="right|center_vertical"
+            android:src="@drawable/ME_RotatoryKnobMainImage" />
+        <TextView
+            android:id="@+id/IDTVCIVRIGHTMIN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginTop="30dp"
+            android:text="MIN"
+            android:textSize="10dp"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/IDTVCIVRIGHTMIN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="150dp"
+            android:text="MAX"
+            android:textSize="10dp"
+            android:textColor="#000000" />
+    </FrameLayout>
+</LinearLayout>
